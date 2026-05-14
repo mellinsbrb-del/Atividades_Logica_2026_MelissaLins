@@ -1,10 +1,38 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿// See https://aka.ms/new-console-template for more information
+using System.Data;
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Sistema_de_Atributos_de_um_Personagem_de_RPG</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+Console.WriteLine("Hello,Welcome!");
 
-</Project>
+     string nome ="Ayla";
+char class = 'g'; (guerreiro);
+int dinheiro total = 2088,90m ;
+
+int ataqueBase = 65;
+int bonusArma = 35;
+int ataqueTotal = ataqueBase + bonusArma;
+
+double vidaInimigo = 25.5;
+double vidaRestante = vidaInimigo - 25.5;
+
+float moedas = 150.5f;
+var moedasFinais = moedas * 6;
+
+long xpTotal = 700000;
+long mediaXp = xpTotal / 2;
+
+
+bool entendiMateria = true;
+
+Console.WriteLine("Ayla, a guerreira, enfrentou um inimigo que queria destruir seu reino.");
+Console.WriteLine("Com coragem e sua espada ancestral, enfrentou batalhas e perigos.");
+Console.WriteLine("No confronto final, derrotou a criatura maldosa e salvou o reino e as pessoas que amava.");
+Console.WriteLine("Sua lenda ficou eternizada na história.");
+
+Console.WriteLine("Parabéns! Você passou de nível!");
+Console.WriteLine("STATUS FINAL=");
+Console.WriteLine("Nome: " + nome);
+Console.WriteLine("Ataque Total: " + ataqueTotal);
+Console.WriteLine("Vida restante do inimigo: " + vidaRestante);
+Console.WriteLine("Moedas finais: " + moedasFinais);
+Console.WriteLine("Média de XP: " + mediaXp);
+Console.WriteLine("Entendi a matéria? " + entendiMateria);
