@@ -1,11 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+using System;
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Anatomia_da_Funcao</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+Console.WriteLine("🔨 BEM-VINDO À FORJA DO MESTRE THORIN 🔨");
 
-</Project>
+int valor1 = PedirMoedas("primeiro");
+int valor2 = PedirMoedas("segundo");
+
+int total = valor1 + valor2;
+
+Console.WriteLine($"💰 O preço final do conserto é: {total} moedas!");
+Console.WriteLine("Thorin agradece! Agora volte para a masmorra!");
+
+
+int PedirMoedas(string ordem)
+{
+    Console.Write($"Digite o valor do {ordem} equipamento: ");
+
+   if (!int.TryParse(Console.ReadLine(), out int valor))
+    {
+        Console.WriteLine("🚨 Valor inválido! Thorin considerou como 0.");
+        return 0;
+ 
