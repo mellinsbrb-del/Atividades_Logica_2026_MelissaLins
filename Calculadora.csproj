@@ -1,10 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿using System.Data;
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+Console.WriteLine("Bem vindo a calculadora");
+{
+    Console.WriteLine("Digite a multiplicação que você quer saber o resultado");
+        Console.ReadLine()
+    Console.WriteLine(Dar o resultado da conta);
 
-</Project>
+}
