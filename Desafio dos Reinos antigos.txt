@@ -1,0 +1,46 @@
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+   using System;
+
+ void Main()
+    {
+        Console.WriteLine("Herói contra o Dragão");
+
+        string nome = "Valentin";
+        string classe = "Guerreiro";
+        int nivel = 10;
+        int hp = 80;
+        int mana = 10;
+
+        Console.WriteLine("Nome: " + nome);
+        Console.WriteLine("Classe: " + classe);
+        Console.WriteLine("Nível: " + nivel);
+        Console.WriteLine("HP: " + hp);
+        Console.WriteLine("Mana: " + mana);
+
+        Console.WriteLine("\n Resultado ");
+
+        if (nivel < 5)
+        {
+            Console.WriteLine("Herói muito fraco! O dragão venceu.").
+        
+            if (classe == "Mago")
+          
+                if (mana >= 30)
+                
+                Console.WriteLine(nome + " lançou uma magia poderosa e derrotou o dragão!")
+                
+                Console.WriteLine("Mana insuficiente! O dragão venceu.");
+                
+            
+            else if (classe == "Guerreiro")
+            
+                if (hp > 50)
+                
+                Console.WriteLine(nome + " atacou com sua espada e derrotou o dragão!");
+                
+                Console.WriteLine("Vida muito baixa! O dragão venceu."
+            
+                Console.WriteLine("Classe desconhecida.");
+
+                Console.WriteLine("\nFim da aventura!");

@@ -1,0 +1,35 @@
+﻿using System;
+
+class Program
+{
+    static void Main()
+    {
+       
+        double[] curaDasPocoes = { 45.5, 50.0, 38.2, 62.8 };
+
+        
+        double mediaDeCura = CalcularMediaDePoder(curaDasPocoes);
+
+        Console.WriteLine("Relatório da Alquimista");
+        Console.WriteLine($"Total de poções analisadas: {curaDasPocoes.Length}");
+        Console.WriteLine($"Média de cura por poção: {mediaDeCura:F2} HP");
+        Console.WriteLine(" ");
+    }
+
+   
+    static double CalcularMediaDePoder(double[] poderes)
+    {
+    
+        if (poderes.Length == 0) return 0;
+
+        double somaTotal = 0;
+
+        
+        for (int i = 0; i < poderes.Length; i++)
+        {
+            somaTotal += poderes[i];
+        }
+
+        return somaTotal / poderes.Length;
+    }
+}
