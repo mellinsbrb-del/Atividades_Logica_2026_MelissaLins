@@ -1,15 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿onsole.OutputEncoding = System.Text.Encoding.UTF8; 
+Console.WriteLine("🔨 BEM-VINDO À FORJA DO MESTRE THORIN 🔨");
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Missao_Guilda_Funcao</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+int valor1 = PedirMoedas("primeiro");
+int valor2 = PedirMoedas("segundo");
 
-  <ItemGroup>
-    <Compile Include="D:\Aprendendo_csharp\Missao Guilda Funcao.csproj" Link="Missao Guilda Funcao.csproj" />
-  </ItemGroup>
+int total = valor1 + valor2;
 
-</Project>
+Console.WriteLine($"💰 O preço final do conserto é: {total} moedas!");
+Console.WriteLine("Thorin agradece! Agora volte para a masmorra!");
+
+
+int PedirMoedas(string ordem)
+{
+    Console.Write($"Digite o valor do {ordem} equipamento: ");
+
+    if (!int.TryParse(Console.ReadLine(), out int valor))
+    {
+        Console.WriteLine("🚨 Valor inválido! Thorin considerou como 0.");
+        return 0;
+ 
