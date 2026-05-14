@@ -1,15 +1,28 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿Console.WriteLine("🤖 Iniciando Cálculo de Matrizes...");
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+int[,] vetA = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+int[,] vetB = { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };
 
-  <ItemGroup>
-    <Compile Include="D:\matriz programação.cs" Link="matriz programação.cs" />
-    <Compile Include="D:\Matriz.cs" Link="Matriz.cs" />
-  </ItemGroup>
 
-</Project>
+int[,] matrizC = new int[3, 3];
+
+for (int i = 0; i < 3; i++) 
+{
+    for (int j = 0; j < 3; j++) 
+    {
+        for (int k = 0; k < 3; k++) 
+        {
+            matrizC[i, j] += vetA[i, k] * vetB[k, j];
+        }
+    }
+}
+
+Console.WriteLine("\n📊 Resultado:");
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        Console.Write(matrizC[i, j] + "\t");
+    }
+    Console.WriteLine();
+}
