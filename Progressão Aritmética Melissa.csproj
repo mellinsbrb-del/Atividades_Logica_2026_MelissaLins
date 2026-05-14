@@ -1,11 +1,35 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
+for (int i = 1; i <= 30; i = i+2) {
+    Console.Write($"{i-1}➡️");
+    using System;
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <RootNamespace>Progressão_Aritmética_Melissa</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    Console.Write("Digite o primeiro termo (onde começa): ");
+    int termoInicial = int.Parse(Console.ReadLine());
 
-</Project>
+    Console.Write("Digite a razão (de quanto em quanto pula): ");
+    int razao = int.Parse(Console.ReadLine());
+
+    Console.Write("Quantos termos você quer exibir? ");
+    int quantidade = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("\Resultado da sua PA");
+
+    for (int i = 0; i < quantidade; i++)
+    {
+        int termoAtual = termoInicial + (i * razao);
+        Console.Write($"{termoAtual} ➡️ ");
+    }
+
+    Console.WriteLine("🎯");
+    {
+        Console.Write($"{i}➡️");
+    }
+
+    Console.Write($"{termoAtual}➡️");
+    }
+}
+Console.WriteLine("🎯");
+/*
+ saída
+1➡️2➡️3➡️4➡️5➡️6➡️7
+ */
